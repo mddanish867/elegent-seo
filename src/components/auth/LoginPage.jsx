@@ -7,11 +7,11 @@ export default function LoginPage() {
   
     return (
       <div className="min-h-screen bg-blue-950 flex items-center justify-center px-4 sm:px-6 lg:px-8">
-        <div className="max-w-md w-full space-y-8 bg-white p-10 rounded-xl shadow-lg">
-          <div>
+        <div className="md:max-w-md w-full space-y-8 bg-white p-10 rounded-xl shadow-lg">
+          <div className='w-full'>
             <h2 className="mt-6 text-center text-3xl font-extrabold text-blue-900">Sign in to your account</h2>
           </div>
-          <div className="mt-8 space-y-6">
+          <div className="w-full mt-8 space-y-6">
             <form className="mt-8 space-y-6">
               <div className="rounded-md shadow-sm space-y-3">
                 <div>
