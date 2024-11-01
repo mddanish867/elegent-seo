@@ -1,5 +1,6 @@
 import { Mail } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import { Link,} from "react-router-dom";
 
 export default function ForgotPasswordPage() {
     const navigate = useNavigate();
@@ -7,7 +8,10 @@ export default function ForgotPasswordPage() {
         navigate("/reset-password")
     }
   return (
-    <div className="min-h-screen bg-blue-950 flex items-center justify-center px-4 sm:px-6 lg:px-8">
+    <div className="relative min-h-screen bg-blue-950 flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      <Link to="/" className="absolute top-10 md:top-4 left-1/2 -translate-x-1/2 md:left-4 md:translate-x-0">
+        <div className="text-2xl font-serif text-orange-300">Elegance</div>
+      </Link>
       <div className="md:max-w-md w-full space-y-8 bg-white p-10 rounded-xl shadow-lg">
         <div className='w-full'>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-blue-900">Forgot your password?</h2>
